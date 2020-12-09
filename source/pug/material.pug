@@ -36,11 +36,23 @@ html(lang="es")
                             .card-body
 
                                 ul.list-group.list-group-flush.list.my-n3.nav-temas
-                                    +navTemaItem('1', 'Mezcla producto.', '#tema1_1')
+                                    +navTemaItem('text', 'Introducción', '#introduccion')
+                                    +navTemaItem('1', 'Tratados y convenios ambientales ratificados por Colombia', '#tema-1')
+                                    +navTemaItem('2', 'Sistema Nacional Ambiental (SINA)', '#tema-2')
+                                    +navTemaItem('3', 'Indicadores Ambientales', '#tema-3')
+                                    +navTemaItem('4', 'Mejoramiento continuo', '#tema-4')
+                                    +navTemaItem('5', 'Ciclo Deming – PHVA', '#tema-5')
+                                    +navTemaItem('6', 'Pasos para realizar un plan de acción', '#tema-6')
+                                    +navTemaItem('7', 'Buenas Prácticas de Manufactura (BPM)', '#tema-7')
+                                    +navTemaItem('glosary', 'Glosario', '#glosario')
+                                    +navTemaItem('folder', 'Material complementario', '#anexos')
+                                    +navTemaItem('references', 'Referencias bibliográficas', '#referencias')
                                     
 
 
         section#mainContent         
+            #introduccion
+                include pages/introduccion.pug
             #tema-1
                 include pages/1-tema.pug
             #tema-2
